@@ -1,0 +1,51 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  /*since the other 2 containers above ones are 70% and 12% heights respectively, this will be 18% so that they all add up to 100%*/
+  height: 18%;
+}
+
+.footer {
+  /*make it the same width as header and center content */
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.languages {
+  /*from design looks to be about 75% of width of container */
+  width: 75%;
+  font-size: 12px;
+}
+
+.language {
+  margin-right: 2px;
+}
+
+.languages button {
+  width: 20px;
+}
+
+.grey {
+  color: grey;
+}
+
+.various-links-container {
+  display: flex;
+  justify-content: space-between;
+  /*from the image, it looks like 80% width */
+  width: 80%;
+}
+
+.various-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+.copyright {
+  font-size: 14px;
+  /*move the copyright off the bottom edge ever so slightly*/
+  margin-bottom: 2px;
+}

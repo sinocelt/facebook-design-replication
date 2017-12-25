@@ -1,0 +1,65 @@
+.header-container {
+  background-color: #3b5998;
+  display: flex;
+  justify-content: center;
+  /*this container's parent container is main-container and since main-container covers 100% of screen, I can use % for height.*/
+  height: 12%;
+}
+
+.header {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.facebook-logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.login-area {
+  display: flex;
+  /*justify-content: space-around;*/
+  justify-content: space-between;
+  /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
+}
+
+.email {}
+
+.password {}
+
+/*forgot account text.*/
+div>div.login-area>div.password.login-item>div {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  color: white;
+  /*I figured out #3b5BCE through trial and error */
+  background-color: #3b5BCE;
+  border: 1px solid #3b5BCE;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.login-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login-button {}
+
+.login-area input {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 1px solid white;
+  border-radius: 2px;
+}

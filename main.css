@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.main-container {
+  /*I needed the following line to make sure that the container filled up the entire screen*/
+  height: 100vh;
+}
+
+input {
+  /*I want to change input boxes to make it so that they appear as a block */
+  display: block;
+}
+
+.connect-and-sign-up-container {
+  background-color: #edf0f5;
+  display: flex;
+  justify-content: center;
+  /*this container's parent container is main-container and since main-container covers 100% of screen, I can use % for height.*/
+  height: 70%;
+}
+
+.connect-and-sign-up {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.connect-container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.connect {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.connect-main-text {
+  font-size: 1.4em;
+  font-weight: bold;
+  height: 25%;
+  width: 80%;
+}
+
+.icons-and-text-container {
+  display: flex;
+  height: 75%;
+  width: 97%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.icons-and-text-item {}
+
+.connect-larger-font {
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.connect-smaller-font {
+  font-size: 0.8em;
+}
+
+.icons-and-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.sign-up {
+  /*force this container to have only width of 50% of its parent. This will later prevent text from
+  create-account-area-container from making its container wider */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sign-up-large-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sign-up-text-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sign-up-text-boxes input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  /*make the input boxes ever so slightly rounded with the same color white as the border color */
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.first-and-last-names-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-and-last-names-boxes input {
+  display: inline-block;
+  width: 49%;
+}
+
+/*I needed to do input because without input, the input box wouldn't fill up 100% of container */
+.mobile-number-box input {
+  width: 100%;
+}
+
+/*I needed to do input because without input, the input box wouldn't fill up 100% of container */
+.new-password-box input {
+  width: 100%;
+}
+
+.sign-up-text-box-item {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.birthday-area-container {
+  width: 100%;
+}
+
+.birthday-area select {
+  margin-right: 1px;
+  background-color: white;
+}
+
+.dates-and-why {
+  /*I picked 80% to make it look as it is in the design picture */
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.dates {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 5px;
+}
+
+.why {
+  font-size: 12px;
+  display: inline-block;
+  /*make sure it goes on the same line as the select element */
+}
+
+.gender {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gender input {
+  display: inline;
+}
+
+.gender-item {
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.create-account-area-container {}
+
+.create-account-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.create-account-button-container {
+  display: flex;
+  /*we want the button container touching the left side of parent container */
+  justify-content: flex-start;
+}
+
+.create-account-button {
+  display: flex;
+  justify-content: flex-start;
+  /*let's make the button only 40% of width of container
+  because that is what it looks like from the picture*/
+  width: 40%;
+}
+
+.create-account-button button {
+  background-color: #69a74e;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid #69a74e;
+  border-radius: 4px;
+}
+
+.create-account-button-text {
+  font-weight: bold;
+}
+
+.create-account-terms-text {
+  font-size: 12px;
+  width: 70%;
+}
+
+.create-page-celebrity-etc-text {
+  font-size: 14px;
+}
+
+.create-account-bottom-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*font-awesome class. We want the font-awesome icons to be grey instead of the default black*/
+.fa {
+  color: grey;
+}
+
+hr {
+  /*the number 86 is arbitrary. It is just what I thought looked like from the design through trial and error */
+  width: 86%;
+}
+
+a {
+  /*remove underline from links */
+  text-decoration: none;
+}

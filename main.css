@@ -171,6 +171,10 @@ input {
   margin-right: 5px;
 }
 
+.dates select {
+  font-size: 16px;
+}
+
 .why {
   font-size: 12px;
   display: inline-block;
